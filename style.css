@@ -1,0 +1,426 @@
+:root{
+    --red: #ee0824;
+    --black: #031218;
+    --black2: #1d232a;
+    --white:#e4edf0;
+}
+
+body{
+    background-color: var(--black);
+
+    user-select: none;
+}
+
+.utama {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+
+    height: 31vh;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--black);
+  }
+  
+  .utama h3 {
+    font-size: 100px;
+    font-weight: 900;
+    color: tomato;
+    
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+    
+    text-shadow: 
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) )
+      calc( var(--y-offset) + var(--stroke) )
+      0px
+      var(--stroke-color);
+    
+  }
+  /* for browsers that support spread, added in
+  https://drafts.csswg.org/css-text-decor-4/#text-shadow-property
+  currently: none browsers! none of them!
+  I can't even find a test: 
+  https://wpt.fyi/results/css/css-text-decor */
+  @supports ( text-shadow: 1px 1px 1px 1px black ) {
+    h3 {
+      text-shadow:
+        
+        var(--x-offset)
+        var(--y-offset)
+        0px
+        0px
+        var(--background-color), 
+        
+        var(--x-offset) 
+        var(--y-offset)
+        var(--stroke)
+        0px
+        var(--stroke-color);
+      
+    }
+  }
+
+
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.446);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+/* 
+
+.list-game{
+    padding-top: 50px;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    background-color: var(--black2);
+    z-index: 999;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px -5px 28px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+}
+
+.list-game .card{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    border-radius: 100px !important ;
+
+}
+
+.list-game  .card a img{
+    border-radius: 20px;
+
+
+    min-width: 200px;
+    min-height: 200px;
+
+    max-width: 201px;
+    max-height: 201px;
+}
+ */
+
+
+
+
+html,
+body {
+}
+
+
+.container-card{
+    background-color: var(--black2);
+    margin-top: 30vh;
+    padding: 40px 0;
+    border-radius: 40px 40px 0 0 ;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px -5px 28px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+}
+
+.container-card .card {
+    border-radius: 20px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all .9s;
+
+}
+
+.container-card .card:hover{
+    transform: scale(1.05);
+}
+
+.container-card .card-blur {
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    width: calc(100% + 1px);
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.container-card .card:hover .card-blur {
+    opacity: 0.9;
+}
+
+.container-card .footer {
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+}
+
+svg#curve {
+    position: absolute;
+    fill: white;
+    left: 0;
+    top: 30vh;
+    bottom: 0;
+    width: 400px;
+    height: 450px;
+}
+
+.container-card .info {
+	font-family: Inconsolata;
+    padding-left: 20px;
+    transform: translateY(250px);
+    
+    transition: transform .5s cubic-bezier(.31,1.21,.64,1.02);
+}
+
+.container-card .card:hover .info {
+    transform: translateY(45px);
+}
+
+.container-card .name {
+    font-weight: bolder;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+
+.container-card .card {
+    background-image: url('https://wafuu.com/cdn/shop/products/41BC8FynO5S_800x.jpg?v=1678881309');
+}
+
+.container-card .menja{
+    background-image: url('assets/menja.png') !important;
+}
+
+.container-card .flappy-plane{
+    background-image: url('assets/monarch-flappy-plane.png') !important;
+}
+
+.container-card .snake{
+    background-image: url('assets/snake.png') !important;
+}
+
+.container-card .aviator{
+    background-image: url('assets/aviator.png') !important;
+}
+
+.container-card .ball-run{
+    background-image: url('assets/ball-run.png') !important;
+}
+
+.container-card .car-run{
+    background-image: url('assets/car-run.png') !important;
+}
+
+.container-card .connect4{
+    background-image: url('assets/connect4.png') !important;
+}
+
+.container-card .memory-game{
+    background-image: url('assets/memory-game.png') !important;
+}
+
+.container-card .alien{
+    background-image: url('assets/alien.png') !important;
+}
+
+.container-card .secret-word{
+    background-image: url('assets/secret-word.png') !important;
+}
+
+.container-card .slice-puzzle{
+    background-image: url('assets/slice puzzle.png') !important;
+}
+
+.container-card .stack{
+    background-image: url('assets/stack.png') !important;
+}
+
+.container-card .tetris{
+    background-image: url('assets/tetris.png') !important;
+}
+
+.container-card .traffic-run{
+    background-image: url('assets/traffic-run.png') !important;
+}
+
+.container-card .whac-bug{
+    background-image: url('assets/whac-bug.png') !important;
+}
+
+.container-card .where-line{
+    background-image: url('assets/where-line.png') !important;
+}
+
+.container-card .tic-tac-toe{
+    background-image: url('assets/tictactoe.png') !important;
+}
+
+.container-card .tic-tac-toe2{
+    background-image: url('assets/tictactoe2.png') !important;
+}
+
+.container-card .tic-tac-toe3{
+    background-image: url('assets/tictactoe3.png') !important;
+}
+
+.container-card .no-img{
+    background-image: url('assets/no-img.png');
+}
