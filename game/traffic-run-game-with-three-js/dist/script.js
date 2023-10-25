@@ -105,8 +105,8 @@ const youtubeLogo = document.getElementById("youtube-main");
 setTimeout(() => {
   if (ready) instructionsElement.style.opacity = 1;
   buttonsElement.style.opacity = 1;
-  youtubeLogo.style.opacity = 1;
-}, 4000);
+  youtubeLogo.style.opacity = 0;
+}, 2000);
 
 // Initialize ThreeJs
 // Set up camera
@@ -174,7 +174,7 @@ function reset() {
   // Reset position and score
   playerAngleMoved = 0;
   score = 0;
-  scoreElement.innerText = "Press UP";
+  scoreElement.innerText = "Mulai Main";
 
   // Remove other vehicles
   otherVehicles.forEach((vehicle) => {

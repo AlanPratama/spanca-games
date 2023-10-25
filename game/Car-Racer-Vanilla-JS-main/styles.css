@@ -45,7 +45,28 @@
             color: white;
             font-size: 1.5em;
             box-shadow: 0 5px 5px #777;
+
+            z-index: 999;
         }
+
+        @media(max-width: 900px){
+            .score{
+                position: absolute;
+                top: 5px;
+                background: #10ac8534;
+                width: 100px;
+                line-height: 70px;
+                text-align: center;
+                color: white;
+                font-size: 1em;
+                box-shadow: 0 5px 5px #777777b0;
+    
+                z-index: 999;
+            }
+        }
+
+
+
         .startScreen{
             position: absolute;
             background-color: #ee5253;
@@ -79,3 +100,19 @@
             box-shadow: 0 5px 5px #777777a6;
         }
         
+
+
+
+.konsole{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.konsole button{
+    padding: 5px 30px;
+    font-size: 20px;
+}

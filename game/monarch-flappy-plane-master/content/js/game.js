@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    const start = $(this).width() + 64;
+    const start = $(this).width() + 1000;
     let started = false;
     let depressed = false;
     let event;
@@ -49,12 +49,12 @@ $(document).ready(() => {
                         }
 
                         if(sl > pl && sl < pl + 168 && st > pt && st < pt + 80) {
-                            overlay("explode", "YOU KILLED SANTA");
+                            overlay("explode", "KAMU MENABRAK SANTA");
                         }
                     });
 
-                    if (top > max) { overlay("crash", "YOU KILLED EVERYONE"); }
-                    if (ticks > 1000) { overlay("cheese", "THAT'S WHAT YOU GET FOR CAMPING"); }
+                    if (top > max) { overlay("crash", "GAME OVER"); }
+                    if (ticks > 1000) { overlay("cheese", "MAIN PESAWAT ATAU MAIN ROKET???"); }
 
                     if (santa > 250 - score) {
                         santa = 0;

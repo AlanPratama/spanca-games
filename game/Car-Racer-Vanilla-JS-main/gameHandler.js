@@ -113,14 +113,20 @@ function moveEnemyCars(carElement){
     });
 } 
 
+function kiri(){
+    if(player.x > 0) player.x -= player.speed++;
+
+}
 function gamePlay() {
     let carElement = document.querySelector('.car');
     let road = gameArea.getBoundingClientRect();
 
     if(player.start){
+
+
         moveRoadLines();
         moveEnemyCars(carElement);
-            
+        
         if(keys.ArrowUp && player.y > (road.top + 70)) player.y -= player.speed;
         if(keys.ArrowDown && player.y < (road.bottom - 85)) player.y += player.speed;
         if(keys.ArrowLeft && player.x > 0) player.x -= player.speed;

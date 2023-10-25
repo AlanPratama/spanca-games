@@ -99,6 +99,7 @@ a:visited {
 
 #youtube-main {
   opacity: 0;
+  display: none;
   transition: opacity 2s;
 }
 
@@ -171,16 +172,5 @@ a:visited {
     width: 0;
     height: 0;
     overflow: hidden;
-  }
-
-  .youtube:hover + #youtube-card {
-    z-index: 49;
-    display: block;
-    position: fixed;
-    bottom: 42px;
-    width: 300px;
-    background-color: white;
-    right: 40px;
-    padding: 25px 130px 25px 25px;
   }
 }

@@ -39,7 +39,8 @@ html, body {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: red;
+    color: white;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 1),0px 4px 2px rgba(0, 0, 0, 1);
     font: bold 64px 'Arial';
     animation: blink 1s linear infinite;
     -webkit-touch-callout: none; 
@@ -52,17 +53,20 @@ html, body {
 
 .explode {
     background: black url("../img/explode.gif") no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .crash {
     background: black url("../img/crash.gif") no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-position: top;
 }
 
 .cheese {
     background: black url("../img/cheese.gif") no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-position: top;
 }
 
 .ground {
