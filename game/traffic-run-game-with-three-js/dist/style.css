@@ -1,3 +1,10 @@
+#tombol-restart{
+  color: white;
+  background-color: rgba(62, 178, 232, 0.896);
+  padding: 2px 3px;
+  border-radius: 4px;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 *, html {
   touch-action: none;
