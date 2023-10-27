@@ -5,6 +5,8 @@
     --white:#e4edf0;
 }
 *, html {
+	    touch-action: none;
+
 }
 
 body{
