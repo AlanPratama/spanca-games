@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 *, html {
   touch-action: none;
-  user-zoom: fixed;
 }
 body {
   margin: 0;
