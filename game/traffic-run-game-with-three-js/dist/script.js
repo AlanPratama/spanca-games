@@ -879,6 +879,12 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
+function tombolRestart(){
+  reset();
+  return;
+}
+
+
 window.addEventListener("keyup", function (event) {
   if (event.key == "ArrowUp") {
     accelerate = false;
