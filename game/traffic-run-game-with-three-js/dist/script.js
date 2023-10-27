@@ -17,9 +17,7 @@ Check out my YouTube channel for other game tutorials: https://www.youtube.com/c
 
 */
 
-window.focus(); // Capture keys right away (by default focus is on editor)
-
-// Pick a random value from an array
+window.focus(); 
 function pickRandom(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
@@ -838,19 +836,34 @@ function Tree() {
   return tree;
 }
 
-accelerateButton.addEventListener("click", function () {
+accelerateButton.addEventListener("mousedown", function () {
   startGame();
   accelerate = true;
 });
-decelerateButton.addEventListener("click", function () {
+decelerateButton.addEventListener("mousedown", function () {
+  startGame();
+  decelerate = true;
+});
+accelerateButton.addEventListener("touchend", function () {
+  startGame();
+  accelerate = true;
+});
+decelerateButton.addEventListener("touchend", function () {
   startGame();
   decelerate = true;
 });
 
-accelerateButton.addEventListener("click", function () {
+
+accelerateButton.addEventListener("mouseup", function () {
   accelerate = false;
 });
-decelerateButton.addEventListener("click", function () {
+decelerateButton.addEventListener("mouseup", function () {
+  decelerate = false;
+});
+accelerateButton.addEventListener("touchstart", function () {
+  accelerate = false;
+});
+decelerateButton.addEventListener("touchstart", function () {
   decelerate = false;
 });
 
