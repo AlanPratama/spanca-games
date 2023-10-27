@@ -846,12 +846,31 @@ decelerateButton.addEventListener("mousedown", function () {
   startGame();
   decelerate = true;
 });
+accelerateButton.addEventListener("touchend", function () {
+  startGame();
+  accelerate = true;
+});
+decelerateButton.addEventListener("touchend", function () {
+  startGame();
+  decelerate = true;
+});
+
+
 accelerateButton.addEventListener("mouseup", function () {
   accelerate = false;
 });
 decelerateButton.addEventListener("mouseup", function () {
   decelerate = false;
 });
+accelerateButton.addEventListener("touchstart", function () {
+  accelerate = false;
+});
+decelerateButton.addEventListener("touchstart", function () {
+  decelerate = false;
+});
+
+
+
 window.addEventListener("keydown", function (event) {
   if (event.key == "ArrowUp") {
     startGame();
