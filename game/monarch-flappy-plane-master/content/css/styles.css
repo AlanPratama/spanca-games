@@ -9,7 +9,6 @@ html, body {
 
 *, html {
     touch-action: none;
-    user-zoom: fixed;
   }
 
 #show {
