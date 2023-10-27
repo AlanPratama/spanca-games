@@ -852,21 +852,14 @@ decelerateButton.addEventListener("mouseup", function () {
 });
 
 
-accelerateButton.addEventListener("touchstart", function () {
-  startGame();
-  accelerate = false;
-});
-decelerateButton.addEventListener("touchstart", function () {
-  startGame();
+accelerateButton.addEventListener("click", function () {
+  accelerate = true;
   decelerate = false;
 });
-accelerateButton.addEventListener("touchend", function () {
-  accelerate = true;
-});
-decelerateButton.addEventListener("touchend", function () {
+decelerateButton.addEventListener("click", function () {
   decelerate = true;
+  accelerate = false
 });
-
 
 
 
