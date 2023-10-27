@@ -4,6 +4,10 @@
     --black2: #1d232a;
     --white:#e4edf0;
 }
+*, html {
+    touch-action: none;
+    user-zoom: fixed;
+}
 
 body{
     background-color: var(--black);
@@ -342,7 +346,7 @@ svg#curve {
 
 
 .container-card .card {
-    background-image: url('https://wafuu.com/cdn/shop/products/41BC8FynO5S_800x.jpg?v=1678881309');
+    border: 1px solid rgba(255, 255, 255, 0.232);
 }
 
 .container-card .menja{
@@ -361,8 +365,8 @@ svg#curve {
     background-image: url('assets/aviator.png') !important;
 }
 
-.container-card .ball-run{
-    background-image: url('assets/ball-run.png') !important;
+.container-card .g2048{
+    background-image: url('assets/2048.png') !important;
 }
 
 .container-card .car-run{
@@ -423,4 +427,19 @@ svg#curve {
 
 .container-card .no-img{
     background-image: url('assets/no-img.png');
+}
+
+@media(max-width: 600px) {
+    .utama h3{
+        text-align: center;
+        font-size: 50px !important;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+
+    .none{
+        display: none;
+    }
 }

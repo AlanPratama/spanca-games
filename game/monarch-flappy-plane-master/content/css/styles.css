@@ -7,6 +7,11 @@ html, body {
     cursor: none;
 }
 
+*, html {
+    touch-action: none;
+    user-zoom: fixed;
+  }
+
 #show {
     display: block;
     position: fixed;

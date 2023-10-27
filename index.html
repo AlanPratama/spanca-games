@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Spanca Games</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +32,7 @@
         </ul>
     </div>
 
-    <div class="container-card flex flex-wrap gap-10 justify-center items-center">
+    <div class="container-card flex flex-wrap md:gap-10 gap-0 justify-center items-center">
     <a href="game/menja/index.html" target="_blank">
 
             <div id="curve" class="card menja">
@@ -62,7 +63,7 @@
         </a>
         <a href="game/snake-game/index.html" target="_blank">
 
-            <div id="curve" class="card snake">
+            <div id="curve" class="card none snake">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -118,7 +119,7 @@
         </a>
         <a href="game/Car-Racer-Vanilla-JS-main/index.html" target="_blank">
 
-            <div id="curve" class="card car-run">
+            <div id="curve" class="card none car-run">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -174,7 +175,7 @@
         </a>
         <a href="game/game-off-2012-master/index.html" target="_blank">
 
-            <div id="curve" class="card alien">
+            <div id="curve" class="card none alien">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -258,7 +259,7 @@
         </a>
         <a href="game/slide-puzzle-master/index.html" target="_blank">
 
-            <div id="curve" class="card slice-puzzle">
+            <div id="curve" class="card none slice-puzzle">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -286,7 +287,7 @@
         </a>
         <a href="game/tetris/index.html" target="_blank">
 
-            <div id="curve" class="card tetris">
+            <div id="curve" class="card none tetris">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -400,7 +401,7 @@
 
         <a href="game/Astray-master/index.html" target="_blank">
 
-            <div id="curve" class="card where-line">
+            <div id="curve" class="card none where-line">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -426,9 +427,9 @@
                 <div class="card-blur"></div>
             </div>
         </a>
-        <a href="game/ball run/index.html" target="_blank">
+        <a href="game/2048/index.html" target="_blank">
 
-            <div id="curve" class="card ball-run">
+            <div id="curve" class="card g2048">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -448,7 +449,7 @@
                         <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
                     </svg>
                     <div class="info">
-                        <div class="name">Ball Run</div>
+                        <div class="name">2048</div>
                     </div>
                 </div>
                 <div class="card-blur"></div>
@@ -456,7 +457,7 @@
         </a>
         <a href="game/stack-game-with-three-js-and-cannon-js/dist/index.html" target="_blank">
 
-            <div id="curve" class="card stack">
+            <div id="curve" class="card none stack">
                 <div class="footer">
                     <svg id="curve">
                         <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
@@ -545,7 +546,14 @@
 
 
 </div>
+<script>
+    window.addEventListener('wheel', function (event) {
+    if (event.ctrlKey === true) {
+        event.preventDefault();
+    }
+});
 
+</script>
 </body>
 
 </html>
