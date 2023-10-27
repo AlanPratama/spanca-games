@@ -5,7 +5,6 @@
     --white:#e4edf0;
 }
 *, html {
-    touch-action: manipulation;
     user-zoom: fixed;
 }
 
