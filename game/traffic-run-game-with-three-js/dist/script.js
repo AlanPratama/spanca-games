@@ -854,17 +854,17 @@ decelerateButton.addEventListener("mouseup", function () {
 
 accelerateButton.addEventListener("touchstart", function () {
   startGame();
-  accelerate = true;
+  accelerate = false;
 });
 decelerateButton.addEventListener("touchstart", function () {
   startGame();
-  decelerate = true;
+  decelerate = false;
 });
 accelerateButton.addEventListener("touchend", function () {
-  accelerate = false;
+  accelerate = true;
 });
 decelerateButton.addEventListener("touchend", function () {
-  decelerate = false;
+  decelerate = true;
 });
 
 
