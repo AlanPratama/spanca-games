@@ -109,7 +109,7 @@
     left: 5px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 
 .konsole button{
