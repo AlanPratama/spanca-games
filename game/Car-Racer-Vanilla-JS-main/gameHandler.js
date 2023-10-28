@@ -128,6 +128,28 @@ function gamePlay() {
         if(keys.ArrowLeft && player.x > 0) player.x -= player.speed;
         if(keys.ArrowRight && player.x < (road.width - 70)) player.x += player.speed;
 
+        const kiriButton = document.getElementById("kiri-button");
+        const kananButton = document.getElementById("kanan-button");
+        
+        kiriButton.addEventListener('touchstart', () => {
+            // Move the car to the left
+            keys.ArrowLeft = true
+        });
+        kiriButton.addEventListener('touchend', () => {
+            // Move the car to the left
+            keys.ArrowLeft = false
+        });
+
+        
+        kananButton.addEventListener('touchstart', () => {
+            // Move the car to the right
+            keys.ArrowRight = true
+        });
+        kananButton.addEventListener('touchend', () => {
+            // Move the car to the right
+            keys.ArrowRight = false
+        });
+        
         carElement.style.top = player.y + "px";
         carElement.style.left = player.x + "px";
 
