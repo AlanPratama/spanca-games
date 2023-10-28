@@ -4,10 +4,6 @@
     --black2: #1d232a;
     --white:#e4edf0;
 }
-*, html {
-	    touch-action: none;
-
-}
 
 body{
     background-color: var(--black);
