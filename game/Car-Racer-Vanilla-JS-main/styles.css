@@ -113,6 +113,10 @@
 }
 
 .konsole button{
-    padding: 5px 30px;
+    padding: 7px 30px;
+    border-radius: 6px;
     font-size: 20px;
+    background-color: #ff9b13;
+    color: white;
+    border: none;
 }
