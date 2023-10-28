@@ -105,14 +105,15 @@
 
 .konsole{
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 5px;
     width: 100%;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
 }
 
 .konsole button{
+        margin: 4px 0px;
     padding: 7px 30px;
     border-radius: 6px;
     font-size: 20px;
